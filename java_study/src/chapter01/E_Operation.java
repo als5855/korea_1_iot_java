@@ -33,22 +33,25 @@ public class E_Operation {
 		//cf) 자바는 일치에 대한 연산이 == (equal 2개)로 작성됨
 		
 		System.out.println("===논리 연산자===");
-//		: 논리 값으
-		System.out.println(true && true);
-		System.out.println(true && false);
+		// : 논리 값(boolean)값을 연산
 		
-		//
-		System.out.println(true || true);
-		System.out.println(true || false);
+		// &&: and(논리곲) 
+		System.out.println(true && true); // true
+		System.out.println(true && false);// false
 		
-		System.out.println(!true );
-		System.out.println(!false );
+		// ||: or(논리합)
+		System.out.println(true || true); // true
+		System.out.println(true || false); // true
+		
+		// !: not(부정논리)
+		System.out.println(!true ); // false
+		System.out.println(!false ); // true
 		
 		System.out.println("=====");
 		System.out.println(3 > 2 && 1== 1);
 		System.out.println(1 != 1); //false
 		
-		System.out.println("+++조건====");
+		System.out.println("=== 조건 연산자 ===");
 //		: 삼항 연산자
 		System.out.println(3> 2 ? 10 : 20); //10
 		

@@ -13,15 +13,16 @@ public class D_IO {
 		// 1. 출력
 //		System.out.println(출려하고자하는 변수 또는 상수 또는 데이터 값);
 //		syso 탄축키fh 자동 완성
+		
 		System.out.println("안녕하세요.");
 		System.out.println("반갑습니다.");
-		// >> 주어진 값을 콘솔데 출려하고 줄을 바꿈
+		// >> 주어진 값을 콘솔데 출력하고 줄을 바꿈
 		// ln : line (줄바꿈)
 		
 		System.out.print("안녕");
 		System.out.print("하세요.");
 
-		System.out.print("!!!"); // 안녕하세요!!!
+		System.out.println("!!!"); // 안녕하세요!!!
 		
 		//cf) 자바의 출려은 문자역 사용시 쌍 따옴표로 지정
 		
@@ -49,13 +50,14 @@ public class D_IO {
 		//>> 버퍼에 개행 문자가 입력으로 처리되는 문제가 발생
 		// 위의 메서드 사용후 
 		// nextLIne()의 입력 메서드 호출로 버ㅓ의 데이터를 사용
-		System.out.println("키를 입력하세요: ");
+		System.out.print("키를 입력하세요: ");
 		int height = sc.nextInt();
 		
 		//버퍼에 남아 있는 개행 문자 처리;
+		
 		sc.nextLine();
 		
-		System.out.println("이름을 입력하세요: ");
+		System.out.print("이름을 입력하세요: ");
 		String name = sc.nextLine();
 		
 		// 스캐너 종료 방법

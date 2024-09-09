@@ -46,5 +46,6 @@ public class A_Variable {
 		final int RESICENT_NUMBER = 1234567;
 		
 		
+		
 	}
 }

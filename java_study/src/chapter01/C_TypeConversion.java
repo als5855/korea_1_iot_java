@@ -27,6 +27,7 @@ public class C_TypeConversion {
 		
 		// 2. 강제 형 변환 (명시적)
 		// : 크기가 작은 자료형으로의 변환
+		
 		int number1 = 1234;
 		float fNumber1 = number1; // 값 손실 일어나지 X
 		
@@ -51,20 +52,19 @@ public class C_TypeConversion {
 	System.out.println(a3); // a
 	
 	int num97 = 97;
-	System.out.println(num97);
+	System.out.println(num97); // 97
 	
 	char example = '가';
 	System.out.println((int)example); // 44032
 	System.out.println((int)example + 1); // 44032
-	System.out.println((char)((int)example + 1)); // 44032
-	
+	System.out.println((char)((int)example + 1)); // 각
 	// cf) char 자료형은 음수 표현식 X 
 	
 	long l1= 123456;
 	int i1 = (int)l1;
 	short s1 = (short)i1;
 	byte b1= (byte)s1;
-	System.out.println(b1);
+	System.out.println(b1); // 64
 	
 	}
 }

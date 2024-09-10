@@ -3,7 +3,6 @@ package chapter09;
 interface Flyable {
 	int Max_SPEED =100;
 	
-	
 	void fly(); // (public abstract 생략)
 	
 	// 디폴트 메서드

@@ -15,3 +15,7 @@ public class Example {
 	// public Example() {}
 	// public Example(모든 멤버 필드에 
 }
+
+
+//Example exam1 = new Example();
+//Example exam2 = new Example("이승아", 50);

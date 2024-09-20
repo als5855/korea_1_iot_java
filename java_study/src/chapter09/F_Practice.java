@@ -1,5 +1,11 @@
 package chapter09;
 
+//인터페이스
+//Fruit 인터페이스 정의
+//- color 라는 추상 메서드
+//- describe 라는 디폴트 메서드
+//- printType 라는 정적 메서드
+
 interface Fruit {
 	String color(); // 추상 메서드 - public abstract 생략
 	
@@ -23,6 +29,10 @@ interface Fruit {
 	 
 	 //디폴트 메서드를 재정의 X
 	 // >> Fruit에 있는 디폴트 메서드가 생략된 형태
+	 
+//		default void describe() {
+//		System.out.println("과일의 색상은 " + color() + "입니다.");
+//	}
 	 
 	 
  }

@@ -7,22 +7,23 @@ import chapter20.Library2.repository.UserRepository;
 
 public class LibraryService {
 	private BookRepository bookRepository = new BookRepository();
-	private UserRepository useRepository = new UserRepository(); 
-
+	private UserRepository userRepository = new UserRepository();
+	
 	public void addBook(Book book) {
-		bookRepository.addBook(book);
+		bookRepository.addBook(book);		
 	}
 
 	public void registerUser(User user) {
-		useRepository.addUser(user);
+		userRepository.addUser(user);
 	}
 
-	public void borrowedBook(String userId, String BookTitle) {
-		User user = useRepository.findUserById(userId);
-		Book book = bookRepository.findBookByTitle(BookTitle);
+	public void borrowBook(String userId, String bookTitle) {
+		User user = userRepository.findUserById(userId);
+		Book book = bookRepository.findBookByTitle(bookTitle);
 		
 		if (user != null && book != null && !book.isBorrowed()) {
-			book.setIsBorrowed(true);
+			// 책을 대여할 수 있는 상태
+			book.setIsBorrowed(false);
 			System.out.println(user.getName() + "님이" + book.getTitle() + "을(를) 대여하였습니다.");
 		} else {
 			// 책을 대여할 수 없는 상태
@@ -32,26 +33,24 @@ public class LibraryService {
 
 	public void returnBook(String title) {
 		Book book = bookRepository.findBookByTitle(title);
-		if (book !=null && book.isBorrowed()) {
+		if (book != null && book.isBorrowed()) {
 			book.setIsBorrowed(false);
 			System.out.println(book.getTitle() + "이(가) 반납되었습니다.");
 		} else {
-			System.out.println("반납 불가: 해당 도서는 대여 중입니다.");
-		}
-
-	}
-
-	public void listAllBook() {
-		for (Book book : bookRepository.findAllBooks()) {
-			System.out.println(book.getTitle() + " - " + (book.isBorrowed() ? "대여중" : "대여가능"));
+			System.out.println("반납 불가: 해당 도서는 대여 중이 아닙니다.");
 		}
 		
 	}
-	
-	public void listAllUsers() {
-		for (User user: useRepository.finAllUser()) {
-			System.out.println(user.getUserId() + ": " + user.getName());
+
+	public void listAllBooks() {
+		for (Book book : bookRepository.findAllBooks()) {
+			System.out.println(book.getTitle() + " - " + (book.isBorrowed() ? "대여 중" : "대여 가능"));
 		}
 	}
 	
+	public void listAllUsers() {
+		for (User user: userRepository.findAllUser()) {
+			System.out.println(user.getUserId() + ": " + user.getName());
+		}
+	}
 }

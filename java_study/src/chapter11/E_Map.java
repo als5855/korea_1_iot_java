@@ -48,6 +48,7 @@ public class E_Map {
 		// EX) String, Integer, Boolean 등
 		
 		Map<String, Integer> students = new HashMap<String, Integer>(); 
+		// 이름(키), 나이(값)
 		
 		students.put("장지민", 30);
 		students.put("이도경", 30);

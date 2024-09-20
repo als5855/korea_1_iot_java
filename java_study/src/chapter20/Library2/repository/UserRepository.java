@@ -21,7 +21,7 @@ public class UserRepository {
 		return null;
 	}
 
-	public List<User> finAllUser() {
+	public List<User> findAllUser() {
 		return users;
 	}
 

@@ -45,10 +45,10 @@ public class Object06 {
 		
 		System.out.println(c3.count); // 5
 		
-		new Counter();
-		new Counter();
-		new Counter();
-		new Counter();
+		new Counter();//5
+		new Counter();//6
+		new Counter();//7
+		new Counter();//8
 
 		System.out.println(Counter.count); // 9
 	}

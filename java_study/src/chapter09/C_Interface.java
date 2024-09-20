@@ -1,15 +1,19 @@
 package chapter09;
 
 interface Flyable {
+	// 상수 final 생략 (public static final 생략)
+		// >> UPPER_SNAKE_CASE 사용 권장
+		// >> 선언과 동시에 초기화
 	int Max_SPEED =100;
 	
 	void fly(); // (public abstract 생략)
 	
-	// 디폴트 메서드
+	// 디폴트 메서드 >> 재정의 가능
 	default void land( ) {
 		System.out.println("Landing");
 	}
 	
+	// 정적 메서드 >> 재정의 불가능
 	static int getWingCount() {
 		return 2;
 	}
@@ -31,7 +35,7 @@ public class C_Interface {
 		public static void main(String[] args) {
 			Bird bird = new Bird();
 			
-			bird.fly();
+			bird.fly(); // Bird 구현 메서드
 			bird.land(); // 디폴트 메서드 - 재정의 동작
 			
 			System.out.println(Flyable.getWingCount()); // 정적 메서드 - 인터페이스 호출

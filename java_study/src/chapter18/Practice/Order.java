@@ -1,8 +1,7 @@
-package chapter18;
+package chapter18.Practice;
 
 import java.util.List;
 
-import chapter18.Practice.Customer;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.ToString;
@@ -12,6 +11,7 @@ import lombok.ToString;
 // 주문 클래스
 //  한 명의 고객(Customer)
 // 여러 개의 제품의 (Product)
+
 @Builder
 @Getter
 @ToString

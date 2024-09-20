@@ -9,7 +9,7 @@ package chapter05;
 // == 사용 권장 사항 ==
 // 1. 클래스 설계 시, 변수(속성) 중 모든 인스턴스가 고통적으로 상용하는 값
 // 2. 인스턴스 변수를 사용 않는 경우에 static 사용
-// >> 클래스 메섣 내에서 인스턴스 변수 호출 X 
+// >> 클래스 메서드 내에서 인스턴스 변수 호출 X 
 class Operator {
 	// 인스턴스 변수
 	int a, b;
@@ -35,7 +35,7 @@ public class Method04 {
 			
 			System.out.println("===정적 메서드===");
 			// 정적(클래스) 메서드 호출
-			
+			// : 클래스명.메서드명(매개변수...);
 			int result1 = Operator.multiply(10, 20);
 			int result2 = Operator.divide(10, 20);
 			

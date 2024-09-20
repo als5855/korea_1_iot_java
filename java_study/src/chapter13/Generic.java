@@ -5,6 +5,7 @@ package chapter13;
 // >> 구체적인 사용 시 타입으로 대체
 // >> 특정 타입에 의존하지 않고 다양한 타입을 지원하는 클래스 또는 메서드 설계
 
+//class 클래스명<제네릭타입>
 class Pair<K, V>{
 		// (접근제어자) 반환타입 필드명;
 		private K key;
@@ -44,6 +45,10 @@ class Message<T> {
 
 public class Generic {
 	public static void main(String[] args) {
+		// [ Wrapper 자료형 ]
+		// Integer >> int
+		// Boolean >> boolean
+		// Character >> char
 		Pair<String, Integer> pair = new Pair<>("안녕하세요.", 123) ;
 		System.out.println(pair.getKey());
 		System.out.println(pair.getValue());

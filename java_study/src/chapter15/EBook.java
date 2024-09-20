@@ -12,9 +12,9 @@ public class EBook extends Book {
 	}
 	
 	// 전자책 대여 시 다운로드 링크를 출력
-	@Override
-	public void borrowBook() throws BookAlredyBorrowedException {
-		super.borrowBook();
-		System.out.println("다운로드 링크: " + downloadLink);
-	}
+		@Override
+		public void borrowBook() throws BookAlredyBorrowedException {
+			super.borrowBook();
+			System.out.println("다운로드 링크: " + downloadLink);
+		}
 }

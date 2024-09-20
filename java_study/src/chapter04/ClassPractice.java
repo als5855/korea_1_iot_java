@@ -1,6 +1,6 @@
 package chapter04;
 
-class ClassPractice {
+class Card {
 	// 인스턴스 변수: 각 카드 마다 고유의 속성(개별 속성)
 	// >> 일반 변수 선언과 동일
 	int number;
@@ -14,13 +14,13 @@ class ClassPractice {
 public class ClassPractice {
 	public static void main(String[] args) {
 		// 정적(클래스) 변수
-		System.out.println(ClassPractice.width);
-		System.out.println(ClassPractice.height);
+		System.out.println(Card.width);
+		System.out.println(Card.height);
 		
 //		System.out.println(Card.kind); - Error
 		
 		// 클래스 Card의 객체(인스턴스) 생성
-		ClassPractice c1 = new ClassPractice();
+		Card c1 = new Card();
 		c1.kind = "Spade";
 		c1.number = 7;
 		

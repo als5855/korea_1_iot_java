@@ -41,7 +41,7 @@ import chapter20.Library2.controller.LibraryController;
 // - 대여 중인 도서 
 public class Main {
 	public static void main(String[] args) {
-		LibraryController contrlloer = new LibraryController();
-		contrlloer.start();
+		LibraryController controller = new LibraryController();
+		controller.start();
 	}
 }

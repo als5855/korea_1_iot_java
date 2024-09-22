@@ -15,7 +15,8 @@ public class D_Array {
 		// : 자바 ArrayList 라이브러리의 기능
 		// : java.utill.ArrayList를 import 해서 사용
 		
-		// cf) 동적 배열의 경우 배열의 타입 지정 시 일반 데이터 타입X, 참조 타입으로 작성
+		// cf) 동적 배열의 경우 배열의 타입 지정 시 일반 데이터 타입은 사용할수 없다, 
+		//참조 타입으로 작성
 		// int >> Integer
 		// char >> Charactor
 		// bool >> Boolean
@@ -38,6 +39,9 @@ public class D_Array {
 		arrayList.add(10);
 		arrayList.add(20);
 		arrayList.add(30);
+		arrayList.add(40);
+		arrayList.add(50);
+		arrayList.add(60);
 		System.out.println(arrayList); // [10, 20, 30]
 		
 		// == ArrayList 데이터 변경 == 

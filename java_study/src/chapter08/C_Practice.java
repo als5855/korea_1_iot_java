@@ -12,7 +12,7 @@ class Animal {
 		System.out.println("The animal makes a sound");
 	}
 }
-
+	
 class Cat extends Animal {
 	@Override
 	void sound() {
